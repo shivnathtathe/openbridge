@@ -1,0 +1,46 @@
+{
+  "name": "@shivnathtathe/openbridge-mcp",
+  "version": "2.0.1",
+  "description": "Local MCP messaging between OpenCode and Claude Code sessions",
+  "type": "module",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "shivnathtathe",
+    "email": "sptathe2001@gmail.com"
+  },
+  "homepage": "https://www.npmjs.com/package/@shivnathtathe/openbridge-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivnathtathe/openbridge.git"
+  },
+  "keywords": [
+    "mcp",
+    "opencode",
+    "claude-code",
+    "agents",
+    "session-bridge"
+  ],
+  "files": [
+    "src/",
+    "assets/logo.png"
+  ],
+  "bin": {
+    "openbridge-mcp": "./src/mcp/server.js",
+    "openbridge": "./src/cli/index.js"
+  },
+  "scripts": {
+    "start": "node src/mcp/server.js",
+    "setup": "node src/cli/index.js init",
+    "sessions": "node src/cli/index.js sessions",
+    "claude": "node src/cli/index.js claude",
+    "export:history": "node scripts/export-session-logs.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+.openbridge/
+opencode.json.openbridge-backup
+opencode.json
+hisotry_conco/
+research_notes/
+reports/
+*.tgz
+.openbridge-test-*/
+.openbridge-package-test-*/
