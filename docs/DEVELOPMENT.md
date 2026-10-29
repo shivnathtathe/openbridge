@@ -28,8 +28,8 @@ not mutate the live .openbridge workspace state.
 ## Distribution checks
 
 Review npm pack --dry-run --json before a release. The tarball must contain only
-runtime modules under src, assets/logo.png, README.md, package.json, and any
-explicitly approved license file npm includes automatically. The allowlist is
+runtime modules under src, assets/logo.png, assets/white_logo.png, README.md,
+package.json, and any explicitly approved license file npm includes automatically. The allowlist is
 independent of GitHub visibility and .gitignore.
 
 The npm package is named @shivnathtathe/openbridge-mcp and is configured for public npm

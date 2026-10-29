@@ -40,7 +40,7 @@ test('npm archive includes only runtime files and initializes the consumer works
   const manifest = JSON.parse(await readFile(resolve(repository, 'package.json'), 'utf8'));
   const sourceFiles = (await readdir(resolve(repository, 'src'), { recursive: true }))
     .filter(file => file.endsWith('.js')).map(file => `src/${file.split(sep).join('/')}`);
-  const expected = [...sourceFiles, 'assets/logo.png', 'README.md', 'package.json'].sort();
+  const expected = [...sourceFiles, 'assets/logo.png', 'assets/white_logo.png', 'README.md', 'package.json'].sort();
   assert.deepEqual(pack.files.map(file => file.path).sort(), expected);
   assert.ok(!pack.files.some(file => /hisotry_conco|\.openbridge\/|opencode\.json|\.test\.js|DEVELOPMENT_STORY/.test(file.path)));
 

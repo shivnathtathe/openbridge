@@ -1,6 +1,6 @@
 {
   "name": "@shivnathtathe/openbridge-mcp",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Local MCP messaging between OpenCode and Claude Code sessions",
   "type": "module",
   "license": "UNLICENSED",
@@ -22,7 +22,8 @@
   ],
   "files": [
     "src/",
-    "assets/logo.png"
+    "assets/logo.png",
+    "assets/white_logo.png"
   ],
   "bin": {
     "openbridge-mcp": "./src/mcp/server.js",

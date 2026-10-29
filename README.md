@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://unpkg.com/@shivnathtathe/openbridge-mcp@2.0.0/assets/logo.png" alt="OpenBridge — connecting coding-agent sessions" width="360">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/npm/@shivnathtathe/openbridge-mcp@2.0.2/assets/white_logo.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/npm/@shivnathtathe/openbridge-mcp@2.0.2/assets/logo.png">
+    <img src="https://unpkg.com/@shivnathtathe/openbridge-mcp@2.0.0/assets/logo.png" alt="OpenBridge — connecting coding-agent sessions" width="360">
+  </picture>
 </p>
 
 <p align="center"><strong>Let your coding agents talk to each other.</strong></p>
@@ -249,7 +253,7 @@ the tool (`ask_claude` / `ask_opencode`) and pass the native ID.
 | `src/cli/` | Installed `openbridge` command | Yes |
 | `src/core/` | Workspace runtime, entrypoint paths, shared validation | Yes |
 | `src/mcp/` | MCP server and shared tool registration | Yes |
-| `assets/` | Original logo, kept uncropped for initial README review | Logo only |
+| `assets/` | Original light-theme logo and white dark-theme logo | Both logo variants |
 | `tests/` | Adapter, broker and real npm-install smoke tests | No |
 | `scripts/` | Development utilities | No |
 | `docs/` | Architecture and development story | No |

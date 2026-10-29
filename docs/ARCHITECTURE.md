@@ -60,6 +60,6 @@ Tests live under tests and use controlled HTTP endpoints plus real MCP stdio
 clients. The packaging test additionally installs the actual npm archive into a
 different project and exercises the installed command, not a repository path.
 
-The npm allowlist includes src, the logo, package metadata and npm's automatically
-included README. Tests, development scripts, architecture/history documents,
+The npm allowlist includes src, both theme-specific logos, package metadata and
+npm's automatically included README. Tests, development scripts, architecture/history documents,
 credentials, generated configurations and captured sessions are excluded.
